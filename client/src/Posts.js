@@ -122,7 +122,7 @@ export default function PostDialog(props) {
 
         // e.preventDefault();
         try {
-        const response = await fetch(`http://${SERVER}/posts/${plant_id}`)
+        const response = await fetch(`https://${SERVER}/posts/${plant_id}`)
         const jsonData = await response.json()
 
         console.log(jsonData)

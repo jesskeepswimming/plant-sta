@@ -161,7 +161,7 @@ export function VerticalLinearStepper(props) {
         }
 
         console.log(body)
-        const response = await fetch(`http://${SERVER}/plants`, {
+        const response = await fetch(`https://${SERVER}/plants`, {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(body)

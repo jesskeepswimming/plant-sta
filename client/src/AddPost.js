@@ -148,7 +148,7 @@ export function Steps(props) {
         }
 
         console.log(body)
-        const response = await fetch( `http://${SERVER}/posts`, {
+        const response = await fetch( `https://${SERVER}/posts`, {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(body)

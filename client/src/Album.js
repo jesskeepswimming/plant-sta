@@ -88,7 +88,7 @@ export default function Album(props) {
 
     // e.preventDefault();
     try {
-      const response = await fetch(`http://${SERVER}/plants/search`)
+      const response = await fetch(`https://${SERVER}/plants/search`)
       const jsonData = await response.json()
 
       console.log(jsonData)
@@ -102,7 +102,7 @@ export default function Album(props) {
     console.log("deleting", plant_id)
     // e.preventDefault();
     try {
-      const response = await fetch(`http://${SERVER}/plants/${plant_id}`,{
+      const response = await fetch(`https://${SERVER}/plants/${plant_id}`,{
         method: "DELETE",
         headers: {"Content-Type": "application/json"},
       })
